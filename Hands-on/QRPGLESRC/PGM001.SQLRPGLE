@@ -7,12 +7,19 @@
 000113190701
 000114191115       dcl-s version char(10);
 000115191115       dcl-s testo   char(30);
+000116191117
+000117191117       dcl-s nuovavariabile char(10);
 000119190701
 000120191115       // Versione del programma
-000121191115       version='1.0';
+000121191117       version='1.1';
 000122191115       testo='Versione '+Version;
 000123191115
 000124191115       dsply testo  ;
+000125191117
+000126191117       // Nella versione 1.1 aggiungo anche le seguenti righe
+000127191117       if version='1.1';
+000128191117          nuovavariabile='OK';
+000129191117       ENDIF;
 000144190701
 000157190701
 000158190701       exsr fine;
